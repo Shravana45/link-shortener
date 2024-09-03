@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener with QR Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <input type="text" id="longUrl" placeholder="Enter long URL">
+        <button onclick="shortenUrl()">Shorten URL</button>
+
+        <div id="result">
+            <p id="shortenedUrl"></p>
+            <canvas id="qrCode"></canvas>
+            <a id="downloadBtn" download="qrcode.png">Download QR Code</a>
+        </div>
+    </div>
+
+    <!-- Include the QRCode.js script -->
+    <script src="qrcodegen.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
